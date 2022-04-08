@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+  <!-- <link ref="stylesheet" href = "css/bootstrap.min.css"></script> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="input-group mb-3 mt-3 mr-3 ml-3">
+    <input type="text" class="form-control" id="searchPhotos" placeholder="Search Photos" aria-label="SearchPhotos" aria-describedby="button-addon2" style="margin-left: 20px;" value="">
+    <div class="input-group-append" style="margin-right: 40px;">
+      <button onclick="search()" class="btn btn-outline-secondary" type="button" id="button-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" >
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+        </svg></button>
+
+        <button onclick="voiceSearch()" class="btn btn-outline-secondary" type="button" id="button-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mic" viewBox="0 0 16 16">
+          <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+          <path d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z"/>
+        </svg></button>
+    </div>
+
+    <div class="custom-file">
+      <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" onchange="previewFile(this)" style="cursor: pointer;">
+      <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+    </div>
+    <input type="text" class="form-control" placeholder="Add Tags" aria-label="LabelTags" aria-describedby="button-addon2" >
+    <div class="input-group-prepend">
+      <span type="file" class="input-group-text" id="inputGroupFileAddon01" onclick="upload()" accept="image/*" style="margin-right: 20px;cursor: pointer;">Upload</span>
+    </div>
+  </div>
+  <div class="display-images" id="images-d">
+
+  </div>
+  <div class="display-images" id="div1">
+
+  </div>
+
+  <!--Script Tags are here for better speed-->
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/keys.js"></script>
+  <script type="text/javascript" src="js/uploadR.js"></script>
+
+  <!--Script tag ends here-->
+</body>
+
+</html>
