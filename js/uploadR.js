@@ -130,6 +130,7 @@ function showImages(res) {
       newDiv.style.display = 'inline'
       var newContent = document.createElement("img");
       newContent.src = res[i];
+      // newContent.className = "rounded mx-auto d-block";
       newContent.style.padding = "20px";
       newContent.style.height = "200px";
       newContent.style.width = "200px";
